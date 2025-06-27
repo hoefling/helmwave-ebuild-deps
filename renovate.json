@@ -6,8 +6,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^UPSTREAM_VERSION$"
+      "managerFilePatterns": [
+        "/^UPSTREAM_VERSION$/"
       ],
       "matchStrings": [
         "(?<currentValue>.*?)\n"
