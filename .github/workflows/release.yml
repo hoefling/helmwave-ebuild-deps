@@ -14,7 +14,7 @@ jobs:
     name: Release helmwave vendor tarball
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - id: upstream-version
       run: |
         echo upstream-version=$(cat UPSTREAM_VERSION) >> $GITHUB_OUTPUT
