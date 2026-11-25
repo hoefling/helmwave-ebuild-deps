@@ -30,7 +30,7 @@ jobs:
     - working-directory: helmwave-${{ steps.upstream-version.outputs.upstream-version-pep440 }}
       run: go mod vendor
     - run: tar --create --auto-compress --file helmwave-${{ steps.upstream-version.outputs.upstream-version-pep440 }}-deps.tar.gz helmwave-${{ steps.upstream-version.outputs.upstream-version-pep440 }}/vendor
-    - uses: softprops/action-gh-release@v2
+    - uses: softprops/action-gh-release@v3
       with:
         draft: false
         prerelease: false
